@@ -1,53 +1,156 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
   <title id="title">Yoga &amp; Pilates nur für Frauen – Golden Hour Banner</title>
-  <desc id="desc">Stilles Home-Studio in warmem Abendlicht mit einer Frau in Yoga-Haltung.</desc>
+  <desc id="desc">Warmes Golden-Hour-Licht in einem ruhigen Home-Studio: eine Frau in Meditationshaltung auf einer Yogamatte, sanfte Fenster-Reflexe, eine Pflanze und ein Korbsessel – eine Auszeit in Creme, Altrosa und Champagner-Gold.</desc>
+
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#FDF8F5"/>
-      <stop offset="45%" stop-color="#F7E8E0"/>
-      <stop offset="75%" stop-color="#E8C5C8"/>
-      <stop offset="100%" stop-color="#D9A8B0"/>
+      <stop offset="42%" stop-color="#F8E7DE"/>
+      <stop offset="70%" stop-color="#EED0CE"/>
+      <stop offset="100%" stop-color="#E0B4BC"/>
     </linearGradient>
     <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#F2C86B"/>
+      <stop offset="0%" stop-color="#F3CE72"/>
+      <stop offset="55%" stop-color="#E0B25F"/>
       <stop offset="100%" stop-color="#C5A059"/>
     </linearGradient>
     <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0%" stop-color="#C5A059" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#C5A059" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#C5A059" stop-opacity="0.5"/>
+      <stop offset="55%" stop-color="#E8C5C8" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#E8C5C8" stop-opacity="0"/>
     </radialGradient>
+
     <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#EFE3D0"/>
-      <stop offset="100%" stop-color="#E0CDB4"/>
+      <stop offset="0%" stop-color="#F1E6D3"/>
+      <stop offset="100%" stop-color="#E2CEB2"/>
     </linearGradient>
+
+    <linearGradient id="mat" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E8C5C8"/>
+      <stop offset="100%" stop-color="#DE9BA6"/>
+    </linearGradient>
+
+    <linearGradient id="windowlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FDF8F5" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#F2C86B" stop-opacity="0.25"/>
+    </linearGradient>
+
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F8ECE8"/>
+      <stop offset="100%" stop-color="#F2DFDB"/>
+    </linearGradient>
+
+    <g id="plant-leaf">
+      <path d="M0 0 C -14 -34, -18 -74, 0 -108 C 18 -74, 14 -34, 0 0 Z"/>
+    </g>
+
+    <!-- Weicher Lichtschein aus dem Fenster -->
+    <filter id="softblur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
   </defs>
 
+  <!-- Hintergrund: Raumwand + Boden -->
   <rect width="1600" height="900" fill="url(#sky)"/>
-  <circle cx="1180" cy="270" r="420" fill="url(#glow)"/>
-  <circle cx="1180" cy="270" r="110" fill="url(#sun)"/>
-  <circle cx="1180" cy="270" r="150" fill="#C5A059" opacity="0.18"/>
+  <rect x="0" y="470" width="1600" height="430" fill="url(#wall)"/>
 
-  <g opacity="0.5">
-    <rect x="0" y="580" width="1600" height="320" fill="url(#floor)"/>
-    <ellipse cx="1180" cy="585" rx="520" ry="26" fill="#C5A059" opacity="0.12"/>
+  <!-- Fenster mit Golden-Hour-Ausblick -->
+  <g opacity="0.85">
+    <rect x="120" y="120" width="520" height="360" rx="6" fill="#FDF8F5" stroke="#E8C5C8" stroke-width="8"/>
+    <rect x="150" y="150" width="460" height="300" rx="4" fill="url(#windowlight)"/>
+    <!-- Fensterkreuz -->
+    <rect x="375" y="150" width="10" height="300" fill="#E8C5C8"/>
+    <rect x="150" y="295" width="460" height="10" fill="#E8C5C8"/>
+    <!-- Sonnenkugel im Fenster -->
+    <circle cx="480" cy="240" r="58" fill="url(#sun)" opacity="0.9"/>
+    <circle cx="480" cy="240" r="80" fill="#F2C86B" opacity="0.22"/>
   </g>
 
-  <g transform="translate(1080 330)">
-    <ellipse cx="60" cy="250" rx="190" ry="22" fill="#B08C46" opacity="0.25"/>
-    <g fill="none" stroke="#8C6A3F" stroke-width="10" stroke-linecap="round" opacity="0.9">
-      <line x1="60" y1="250" x2="60" y2="60"/>
-      <circle cx="60" cy="38" r="26"/>
-      <path d="M60 96 C 30 140, -30 130, -52 168"/>
-      <path d="M60 96 C 90 140, 150 130, 172 168"/>
-      <path d="M60 190 C 20 225, -60 230, -110 240"/>
-      <path d="M60 190 C 100 225, 180 230, 230 240"/>
+  <!-- Warme Lichtreflexe auf dem Boden -->
+  <ellipse cx="420" cy="500" rx="420" ry="60" fill="#C5A059" opacity="0.18" filter="url(#softblur)"/>
+
+  <!-- Globale Lichtstimmung -->
+  <circle cx="1000" cy="330" r="560" fill="url(#glow)"/>
+  <circle cx="1000" cy="330" r="150" fill="url(#sun)"/>
+  <circle cx="1000" cy="330" r="210" fill="#C5A059" opacity="0.16"/>
+
+  <!-- Plant im Vordergrund links -->
+  <g transform="translate(150 560)">
+    <path d="M-18 300 C -22 300, -22 150, -12 60 L 32 60 C 42 150, 42 300, 38 300 Z" fill="#B08C46"/>
+    <path d="M10 120 C 10 120, 40 60, 90 20 L 66 6 C 40 55, 20 110, 10 120 Z" fill="#7A9A8B"/>
+    <path d="M10 120 C 10 120, -30 55, -78 16 L -54 2 C -26 50, -8 108, 10 120 Z" fill="#8FA89B"/>
+    <path d="M10 90 C 10 90, 0 20, -4 -40 L 22 -40 C 20 20, 16 84, 10 90 Z" fill="#7A9A8B"/>
+    <use href="#plant-leaf" transform="translate(10 40) scale(0.9) rotate(-24)" fill="#6E8B7D"/>
+    <use href="#plant-leaf" transform="translate(10 40) scale(0.72) rotate(26)" fill="#8FA89B"/>
+  </g>
+
+  <!-- Korb-Sessel rechts als Wohn-Akzent -->
+  <g transform="translate(1330 470)">
+    <ellipse cx="0" cy="150" rx="150" ry="26" fill="#8C6A3F" opacity="0.14"/>
+    <path d="M-130 150 C -120 40, -70 -14, 0 -14 C 70 -14, 120 40, 130 150 Z" fill="#D9AE7E"/>
+    <path d="M-118 140 C -108 58, -64 10, 0 10 C 64 10, 108 58, 118 140 Z" fill="#E2C29A"/>
+    <path d="M-100 150 C -92 96, -56 62, 0 62 C 56 62, 92 96, 100 150 Z" fill="#C9A170"/>
+    <rect x="-40" y="-6" width="80" height="34" rx="12" fill="#D9AE7E"/>
+  </g>
+
+  <!-- Zentrale Szene: Matte + Frau in Meditation -->
+  <g transform="translate(820 560)">
+    <!-- Matte -->
+    <ellipse cx="0" cy="240" rx="300" ry="46" fill="#8C6A3F" opacity="0.14"/>
+    <rect x="-320" y="200" width="640" height="46" rx="23" fill="url(#mat)"/>
+    <rect x="-320" y="200" width="640" height="46" rx="23" fill="none" stroke="#C5A059" stroke-opacity="0.25"/>
+
+    <!-- Sanfter Kernschatten der Figur auf der Matte -->
+    <ellipse cx="0" cy="222" rx="150" ry="20" fill="#8C6A3F" opacity="0.16"/>
+
+    <!-- Figur: Sonnen-Gruß / Meditationssitz -->
+    <g>
+      <!-- Beine (Lotus) -->
+      <ellipse cx="-60" cy="208" rx="92" ry="34" fill="#CDA8A8"/>
+      <ellipse cx="60" cy="208" rx="92" ry="34" fill="#C59D9D"/>
+      <!-- Knie -->
+      <circle cx="-118" cy="192" r="40" fill="#D9B9B9"/>
+      <circle cx="118" cy="192" r="40" fill="#D2AFAF"/>
+      <!-- Rumpf / Oberkörper -->
+      <path d="M-62 200 C -74 120, -70 74, 0 66 C 70 74, 74 120, 62 200 Z" fill="#E7C7C6"/>
+
+      <!-- Arme: gefaltete Hände vor der Brust -->
+      <path d="M-8 96 C -46 108, -78 150, -70 172 C -58 186, -40 178, -30 156 C -22 138, -16 118, -8 112 Z" fill="#D9B9B9"/>
+      <path d="M8 96 C 46 108, 78 150, 70 172 C 58 186, 40 178, 30 156 C 22 138, 16 118, 8 112 Z" fill="#D2AFAF"/>
+      <ellipse cx="0" cy="150" rx="26" ry="20" fill="#E2C2C1"/>
+
+      <!-- Hals -->
+      <rect x="-11" y="54" width="22" height="22" rx="8" fill="#CDA8A8"/>
+
+      <!-- Kopf -->
+      <ellipse cx="0" cy="26" rx="42" ry="46" fill="#D9B9B9"/>
+      <!-- Haar, nach hinten gebunden -->
+      <path d="M-42 6 C -40 -22, 40 -22, 42 6 C 44 34, 30 60, 6 66 C 16 48, 22 34, 26 18 C 8 6, -10 6, -26 18 C -22 34, -16 48, -6 66 C -30 60, -44 34, -42 6 Z" fill="#5A4038"/>
+      <!-- Haar-Dutt -->
+      <circle cx="0" cy="-30" r="18" fill="#5A4038"/>
+
+      <!-- Gesichtszüge (sanft, ruhevoll) -->
+      <path d="M-16 20 C -11 16, -6 16, -3 20" fill="none" stroke="#6B4F46" stroke-width="3" stroke-linecap="round"/>
+      <path d="M16 20 C 11 16, 6 16, 3 20" fill="none" stroke="#6B4F46" stroke-width="3" stroke-linecap="round"/>
+      <path d="M-8 40 C -3 44, 3 44, 8 40" fill="none" stroke="#B57272" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Goldener Schein der Sonne auf der Figur -->
+      <path d="M-90 200 C -72 100, 40 66, 80 110 C 120 150, 130 200, 90 210 C 60 160, 30 130, -10 130 C -50 132, -80 168, -90 200 Z" fill="#F2C86B" opacity="0.14"/>
+    </g>
+
+    <!-- Duftende Seele: kleiner Blätter-Kranz um die Matte -->
+    <g fill="#7A9A8B" opacity="0.5">
+      <circle cx="-330" cy="224" r="8"/>
+      <circle cx="330" cy="224" r="8"/>
     </g>
   </g>
 
-  <g fill="#3A3335">
-    <rect x="60" y="60" width="360" height="10" rx="5"/>
-    <rect x="60" y="120" width="290" height="10" rx="5"/>
-    <rect x="60" y="180" width="250" height="10" rx="5"/>
-    <rect x="60" y="240" width="320" height="10" rx="5"/>
+  <!-- Sanfte Partikel / Lichtpunkte -->
+  <g fill="#F2C86B" opacity="0.4">
+    <circle cx="620" cy="150" r="4"/>
+    <circle cx="1140" cy="120" r="5"/>
+    <circle cx="1360" cy="220" r="4"/>
+    <circle cx="520" cy="280" r="3"/>
+    <circle cx="980" cy="90" r="4"/>
   </g>
 </svg>
