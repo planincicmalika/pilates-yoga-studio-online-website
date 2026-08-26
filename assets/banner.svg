@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Yoga &amp; Pilates nur für Frauen – Golden Hour Banner</title>
+  <desc id="desc">Stilles Home-Studio in warmem Abendlicht mit einer Frau in Yoga-Haltung.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FDF8F5"/>
+      <stop offset="45%" stop-color="#F7E8E0"/>
+      <stop offset="75%" stop-color="#E8C5C8"/>
+      <stop offset="100%" stop-color="#D9A8B0"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F2C86B"/>
+      <stop offset="100%" stop-color="#C5A059"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#C5A059" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#C5A059" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EFE3D0"/>
+      <stop offset="100%" stop-color="#E0CDB4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1180" cy="270" r="420" fill="url(#glow)"/>
+  <circle cx="1180" cy="270" r="110" fill="url(#sun)"/>
+  <circle cx="1180" cy="270" r="150" fill="#C5A059" opacity="0.18"/>
+
+  <g opacity="0.5">
+    <rect x="0" y="580" width="1600" height="320" fill="url(#floor)"/>
+    <ellipse cx="1180" cy="585" rx="520" ry="26" fill="#C5A059" opacity="0.12"/>
+  </g>
+
+  <g transform="translate(1080 330)">
+    <ellipse cx="60" cy="250" rx="190" ry="22" fill="#B08C46" opacity="0.25"/>
+    <g fill="none" stroke="#8C6A3F" stroke-width="10" stroke-linecap="round" opacity="0.9">
+      <line x1="60" y1="250" x2="60" y2="60"/>
+      <circle cx="60" cy="38" r="26"/>
+      <path d="M60 96 C 30 140, -30 130, -52 168"/>
+      <path d="M60 96 C 90 140, 150 130, 172 168"/>
+      <path d="M60 190 C 20 225, -60 230, -110 240"/>
+      <path d="M60 190 C 100 225, 180 230, 230 240"/>
+    </g>
+  </g>
+
+  <g fill="#3A3335">
+    <rect x="60" y="60" width="360" height="10" rx="5"/>
+    <rect x="60" y="120" width="290" height="10" rx="5"/>
+    <rect x="60" y="180" width="250" height="10" rx="5"/>
+    <rect x="60" y="240" width="320" height="10" rx="5"/>
+  </g>
+</svg>

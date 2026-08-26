@@ -36,7 +36,7 @@
   ]
 }
 </script>
-<!-- SITE-VERSION: 3 -->
+<!-- SITE-VERSION: 4 -->
 <style>
   :root {
     --cream: #FDF8F5;
@@ -145,8 +145,18 @@
   /* ===== Header ===== */
   .header {
     background: var(--cream);
-    padding: 120px 0;
+    padding: 60px 0 120px;
     text-align: center;
+  }
+  .banner {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    margin: 0 auto 36px;
+    display: block;
+    border-radius: 16px;
+    border: 1px solid var(--gold-light);
+    box-shadow: var(--shadow);
   }
   .header h1 { max-width: 700px; margin: 0 auto 20px; }
   .header p {
@@ -394,6 +404,7 @@
 
   <!-- ===== HEADER ===== -->
   <header class="header">
+    <img class="banner" src="assets/banner.svg" alt="Golden-Hour-Stimmung im Home-Studio mit Frau in Yoga-Pose">
     <div class="container">
       <h1>Yoga &amp; Pilates nur für Frauen</h1>
       <p>Deine Auszeit von zu Hause – sanfter Einstieg für mehr Kraft, Beweglichkeit und Entspannung.</p>
@@ -621,7 +632,7 @@
   </footer>
 
   <script>
-    const SITE_VERSION = "1.2";
+    const SITE_VERSION = "1.3";
     console.log("Aktionsnummer (Version): " + SITE_VERSION);
 
     document.querySelectorAll('.slot').forEach(function (btn) {
