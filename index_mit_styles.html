@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yoga &amp; Pilates nur für Frauen</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #4A3F3B;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  section { padding: 50px 0; text-align: center; }
+
+  h1, h2, h3 { color: #d17a9e; }
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; margin-bottom: 10px; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #E8A0BF, #F7E7B4);
+    padding: 70px 20px;
+    text-align: center;
+  }
+  .header h1 { color: #fff; }
+  .header p { color: #fff; margin: 12px auto 25px; max-width: 500px; }
+
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .btn-white { background: #fff; color: #d17a9e; }
+  .btn-rose { background: #d17a9e; color: #fff; }
+  .btn-rose:hover { background: #b96283; }
+
+  /* Über */
+  .about { background: #F5EDE3; }
+  .about p { max-width: 600px; margin: 0 auto 15px; }
+  .benefits { list-style: none; max-width: 500px; margin: 20px auto 0; }
+  .benefits li { background: #fff; padding: 12px; margin: 10px 0; border-left: 5px solid #E8A0BF; text-align: left; }
+
+  /* Preise */
+  .pricing-grid { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; margin-top: 20px; }
+  .card { background: #F5EDE3; border-radius: 12px; padding: 30px; width: 280px; }
+  .card .price { font-size: 2rem; font-weight: bold; margin: 12px 0; }
+  .card ul { list-style: none; margin: 15px 0; }
+  .card li { margin: 6px 0; }
+
+  /* Formular */
+  .contact { background: #E7D7C1; }
+  .contact-form { max-width: 500px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 12px; text-align: left; }
+  .form-group { margin-bottom: 15px; }
+  label { display: block; margin-bottom: 5px; font-weight: 600; }
+  input, select, textarea {
+    width: 100%; padding: 12px; border: 2px solid #E7D7C1; border-radius: 8px;
+    font-size: 1rem; font-family: inherit;
+  }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: #d17a9e; }
+  .btn-submit { width: 100%; border: none; cursor: pointer; }
+
+  /* Footer */
+  .footer { background: #4A3F3B; color: #F7E7B4; padding: 25px 20px; text-align: center; }
+  .footer a { color: #F7E7B4; margin: 0 8px; }
+
+  @media (min-width: 768px) {
+    h1 { font-size: 2.8rem; }
+  }
+</style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Yoga &amp; Pilates nur für Frauen</h1>
+    <p>Deine Auszeit von zu Hause – sanfter Einstieg für mehr Kraft, Beweglichkeit und Entspannung.</p>
+    <a href="#kontakt" class="btn btn-white">Jetzt Probetraining sichern</a>
+  </header>
+
+  <section class="about" id="ueber">
+    <div class="container">
+      <h2>Über den Kurs</h2>
+      <p>Ein geschützter Raum exklusiv für Frauen, um ohne Leistungsdruck mit Yoga und Pilates zu starten. Keinerlei Vorkenntnisse erforderlich.</p>
+      <p>Alle Kurse finden online per Zoom statt – bequem von zu Hause aus.</p>
+      <ul class="benefits">
+        <li>Verspannungen lösen</li>
+        <li>Rumpf stärken</li>
+        <li>Stress abbauen</li>
+        <li>Mehr Beweglichkeit</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="pricing" id="preise">
+    <div class="container">
+      <h2>Preise &amp; Pakete</h2>
+      <div class="pricing-grid">
+        <div class="card">
+          <h3>Probetraining</h3>
+          <div class="price">0 €</div>
+          <ul>
+            <li>1 kostenlose Online-Stunde</li>
+            <li>Geschlossener Frauenkreis</li>
+            <li>Keine Verpflichtung</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-rose">Jetzt sichern</a>
+        </div>
+        <div class="card">
+          <h3>10er-Karte</h3>
+          <div class="price">120 €</div>
+          <ul>
+            <li>10 Online-Kurse via Zoom</li>
+            <li>Flexibel einlösbar</li>
+            <li>Für alle Kurs-Level</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-rose">Jetzt buchen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="kontakt">
+    <div class="container">
+      <h2>Anmeldung &amp; Kontakt</h2>
+      <form class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Dein Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-Mail-Adresse</label>
+          <input type="email" id="email" name="email" placeholder="deine@email.de" required>
+        </div>
+        <div class="form-group">
+          <label for="paket">Gewünschtes Angebot</label>
+          <select id="paket" name="paket" required>
+            <option value="probe">Kostenloses Probetraining</option>
+            <option value="zehn">10er-Karte (120 €)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="nachricht">Nachricht (optional)</label>
+          <textarea id="nachricht" name="nachricht" placeholder="Deine Fragen oder Wünsche..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-rose btn-submit">Jetzt anmelden</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Yoga &amp; Pilates nur für Frauen. Alle Rechte vorbehalten.</p>
+    <p><a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
+  </footer>
+
+</body>
+</html>

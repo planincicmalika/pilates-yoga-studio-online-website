@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Yoga &amp; Pilates für Frauen | Sanfter Einstieg</title>
+<meta name="description" content="Yoga &amp; Pilates nur für Frauen – geschützter Raum, sanfter Einstieg ohne Vorkenntnisse. Live-Kurse per Zoom und Videothek. Hol dir dein kostenloses Probetraining.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://example.com/index.html">
+<meta property="og:title" content="Online Yoga &amp; Pilates für Frauen">
+<meta property="og:description" content="Sanfter Einstieg ohne Leistungsdruck – Live-Kurse und Videothek exklusiv für Frauen.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Yoga & Pilates nur für Frauen",
+  "description": "Online Yoga und Pilates Kurse exklusiv für Frauen. Sanfter Einstieg ohne Vorkenntnisse, Live via Zoom und On-Demand Videothek.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Yoga & Pilates nur für Frauen"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Kostenloses Probetraining",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    {
+      "@type": "Offer",
+      "name": "10er-Karte Online-Kurse",
+      "price": "120",
+      "priceCurrency": "EUR"
+    }
+  ]
+}
+</script>
+<!-- SITE-VERSION: 3 -->
+<style>
+  :root {
+    --cream: #FDF8F5;
+    --rose: #E8C5C8;
+    --gold: #C5A059;
+    --gold-dark: #B08C46;
+    --espresso: #3A3335;
+    --berry: #D96B74;
+    --sage: #7A9A8B;
+    --player: #2A2426;
+    --font-serif: Georgia, 'Times New Roman', serif;
+    --font-sans: 'Segoe UI', Helvetica, Arial, sans-serif;
+    --gold-light: rgba(197, 160, 89, 0.25);
+    --shadow: 0 10px 30px rgba(58, 51, 53, 0.10);
+    --transition: 350ms ease;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: var(--gold);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 0 0 12px 0;
+    z-index: 100;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .skip-link:focus {
+    left: 0;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--gold-dark);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--espresso);
+    background: var(--cream);
+    line-height: 1.7;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  section { padding: 100px 0; }
+
+  h1, h2, h3 {
+    font-family: var(--font-serif);
+    color: var(--espresso);
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+  }
+
+  h1 { font-size: 2.6rem; }
+  h2 { font-size: 2.1rem; margin-bottom: 16px; text-align: center; }
+  h3 { font-size: 1.3rem; }
+
+  .section-sub {
+    max-width: 620px;
+    margin: 0 auto 50px;
+    text-align: center;
+    color: var(--espresso);
+    opacity: 0.8;
+  }
+
+  /* ===== Buttons ===== */
+  .btn {
+    display: inline-block;
+    padding: 15px 34px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1px solid transparent;
+    transition: background var(--transition), box-shadow var(--transition), transform var(--transition);
+  }
+  .btn-primary { background: var(--gold); color: #fff; }
+  .btn-primary:hover {
+    background: var(--gold-dark);
+    box-shadow: 0 8px 20px rgba(197, 160, 89, 0.35);
+    transform: translateY(-2px);
+  }
+  .btn-outline { background: transparent; color: var(--espresso); border: 1px solid var(--gold); }
+  .btn-outline:hover { background: var(--gold); color: #fff; }
+
+  /* ===== Header ===== */
+  .header {
+    background: var(--cream);
+    padding: 120px 0;
+    text-align: center;
+  }
+  .header h1 { max-width: 700px; margin: 0 auto 20px; }
+  .header p {
+    max-width: 560px;
+    margin: 0 auto 40px;
+    font-size: 1.15rem;
+    opacity: 0.85;
+  }
+  .header .btn + .btn { margin-left: 14px; }
+
+  /* ===== Über den Kurs ===== */
+  .about { background: var(--rose); }
+  .about p { max-width: 620px; margin: 0 auto 18px; text-align: center; }
+  .benefits {
+    list-style: none;
+    max-width: 700px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .benefits li {
+    background: var(--cream);
+    padding: 18px 24px;
+    border-radius: 16px;
+    border: 1px solid var(--gold-light);
+    text-align: center;
+    font-weight: 600;
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  .benefits li:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+
+  /* ===== Videothek ===== */
+  .library { background: var(--cream); }
+  .video-grid { display: grid; grid-template-columns: 1fr; gap: 30px; }
+  .video-card {
+    background: var(--cream);
+    border-radius: 16px;
+    border: 1px solid var(--gold-light);
+    overflow: hidden;
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  .video-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+  .thumbnail {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(135deg, var(--rose), var(--cream));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .play-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--gold);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    box-shadow: 0 6px 18px rgba(197, 160, 89, 0.45);
+  }
+  .badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 5px 12px;
+    border-radius: 20px;
+    color: #fff;
+  }
+  .badge-live { background: var(--berry); }
+  .badge-ondemand { background: var(--sage); }
+  .video-meta { position: absolute; top: 12px; right: 12px; display: flex; gap: 6px; }
+  .tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background: var(--player);
+    color: #fff;
+    opacity: 0.9;
+  }
+  .video-body { padding: 24px; }
+  .video-body h3 { margin-bottom: 8px; }
+  .video-body p { font-size: 0.95rem; opacity: 0.8; }
+
+  /* ===== Live / Kino-Modus ===== */
+  .live { background: var(--player); padding: 100px 0; text-align: center; }
+  .live h2 { color: #fff; }
+  .live .section-sub { color: #fff; }
+  .live-player {
+    max-width: 720px;
+    margin: 0 auto 30px;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    border: 1px solid var(--gold-light);
+    background: radial-gradient(ellipse at center, #3a3436 0%, var(--player) 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .live-live-badge {
+    display: inline-block;
+    background: var(--berry);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 8px 18px;
+    border-radius: 24px;
+    margin-bottom: 16px;
+  }
+
+  /* ===== Kurs-Kalender ===== */
+  .schedule { background: var(--rose); }
+  .schedule-table {
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto 40px;
+    border-collapse: collapse;
+    background: var(--cream);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  .schedule-table th, .schedule-table td {
+    padding: 16px 18px;
+    text-align: left;
+    font-size: 0.95rem;
+  }
+  .schedule-table th {
+    background: var(--gold);
+    color: #fff;
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+  }
+  .schedule-table td { border-top: 1px solid var(--gold-light); }
+  .schedule-table tr { transition: background var(--transition); }
+  .schedule-table tbody tr:hover { background: var(--rose); }
+  .schedule-table .slot {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--espresso);
+    padding: 8px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: background var(--transition), color var(--transition);
+  }
+  .schedule-table .slot:hover { background: var(--gold); color: #fff; }
+  .mini-badge { font-weight: 700; font-size: 0.75rem; padding: 4px 10px; border-radius: 20px; color: #fff; }
+  .mini-live { background: var(--berry); }
+  .mini-ondemand { background: var(--sage); }
+
+  /* ===== Mitgliedschaften ===== */
+  .membership { background: var(--cream); }
+  .pricing-grid { display: grid; grid-template-columns: 1fr; gap: 30px; max-width: 860px; margin: 0 auto; }
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    border: 2px solid transparent;
+    padding: 40px 32px;
+    text-align: center;
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  .card:hover { transform: translateY(-4px); }
+  .card.featured { border: 2px solid var(--gold); position: relative; }
+  .popular-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gold);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 6px 18px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  .card h3 { margin-bottom: 10px; }
+  .price { font-family: var(--font-serif); font-size: 2.6rem; font-weight: 700; margin: 12px 0 4px; }
+  .price-note { font-size: 0.85rem; opacity: 0.7; margin-bottom: 20px; }
+  .card ul { list-style: none; margin: 0 0 26px; }
+  .card li { padding: 8px 0; font-size: 0.95rem; opacity: 0.85; }
+
+  /* ===== Formular ===== */
+  .contact { background: var(--rose); }
+  .contact .section-sub { color: var(--espresso); }
+  .contact-form {
+    max-width: 560px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid var(--gold-light);
+    box-shadow: var(--shadow);
+    text-align: left;
+  }
+  .form-group { margin-bottom: 22px; }
+  label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.95rem; }
+  input, select, textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid rgba(197, 160, 89, 0.4);
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    background: var(--cream);
+    color: var(--espresso);
+    transition: border-color var(--transition);
+  }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--gold); background: #fff; }
+  .btn-submit { width: 100%; border: none; cursor: pointer; font-size: 1rem; padding: 16px; }
+  .form-status { margin-top: 14px; text-align: center; font-weight: 600; color: var(--espresso); min-height: 1.4em; }
+  .form-status.is-error { color: var(--berry); }
+  .form-status.is-success { color: var(--sage); }
+
+  /* ===== Footer ===== */
+  .footer { background: var(--rose); color: var(--espresso); padding: 40px 20px; text-align: center; }
+  .footer a { color: var(--espresso); margin: 0 10px; text-decoration: underline; }
+  .footer a:hover { color: var(--gold-dark); }
+  .footer p { margin-bottom: 8px; opacity: 0.9; }
+
+  /* ===== Responsive ===== */
+  @media (min-width: 768px) {
+    .benefits { grid-template-columns: 1fr 1fr; }
+    .video-grid { grid-template-columns: repeat(3, 1fr); }
+    .pricing-grid { grid-template-columns: 1fr 1fr; }
+    h1 { font-size: 3.4rem; }
+  }
+</style>
+</head>
+<body>
+
+  <a class="skip-link" href="#hauptinhalt">Zum Hauptinhalt springen</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container">
+      <h1>Yoga &amp; Pilates nur für Frauen</h1>
+      <p>Deine Auszeit von zu Hause – sanfter Einstieg für mehr Kraft, Beweglichkeit und Entspannung.</p>
+      <a href="#kontakt" class="btn btn-primary">Jetzt beitreten</a>
+      <a href="#kontakt" class="btn btn-outline">Probetraining</a>
+    </div>
+  </header>
+
+  <main id="hauptinhalt">
+
+  <!-- ===== ÜBER DEN KURS ===== -->
+  <section class="about" id="ueber">
+    <div class="container">
+      <h2>Über den Kurs</h2>
+      <p>Ein geschützter Raum exklusiv für Frauen, um ohne Leistungsdruck mit Yoga und Pilates zu starten. Keinerlei Vorkenntnisse erforderlich.</p>
+      <p>Alle Kurse findest du online per Live-Stream und in der Videothek – bequem von zu Hause aus.</p>
+      <ul class="benefits">
+        <li>Verspannungen lösen</li>
+        <li>Rumpf stärken</li>
+        <li>Stress abbauen</li>
+        <li>Mehr Beweglichkeit</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== VIDEOTHEK ===== -->
+  <section class="library" id="videothek">
+    <div class="container">
+      <h2>Videothek</h2>
+      <p class="section-sub">Deine Kurse, wann du möchtest – On-Demand &amp; live.</p>
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="thumbnail">
+            <span class="badge badge-live">JETZT LIVE</span>
+            <span class="video-meta">
+              <span class="tag">30 Min</span>
+              <span class="tag">Anfänger</span>
+            </span>
+            <div class="play-icon">&#9654;</div>
+          </div>
+          <div class="video-body">
+            <h3>Kurs 1</h3>
+            <p>Sanfter Einstieg – Live mit der Gruppe.</p>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumbnail">
+            <span class="badge badge-ondemand">On-Demand</span>
+            <span class="video-meta">
+              <span class="tag">40 Min</span>
+              <span class="tag">Anfänger</span>
+            </span>
+            <div class="play-icon">&#9654;</div>
+          </div>
+          <div class="video-body">
+            <h3>Kurs 2</h3>
+            <p>Rumpf &amp; Haltung – flexibel abrufbar.</p>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumbnail">
+            <span class="badge badge-ondemand">On-Demand</span>
+            <span class="video-meta">
+              <span class="tag">20 Min</span>
+              <span class="tag">Alle Level</span>
+            </span>
+            <div class="play-icon">&#9654;</div>
+          </div>
+          <div class="video-body">
+            <h3>Kurs 3</h3>
+            <p>Abend-Yoga zum Entspannen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIVE / KINO-MODUS ===== -->
+  <section class="live">
+    <div class="container">
+      <span class="live-live-badge">&#9679; JETZT LIVE</span>
+      <h2>Morgengruß live</h2>
+      <p class="section-sub">Sei dabei im geschützten Live-Stream – 60 Minuten Yoga &amp; Pilates.</p>
+      <div class="live-player">
+        <div class="play-icon">&#9654;</div>
+      </div>
+      <a href="#kontakt" class="btn btn-primary">Jetzt beitreten</a>
+    </div>
+  </section>
+
+  <!-- ===== KURS-KALENDER ===== -->
+  <section class="schedule" id="kalender">
+    <div class="container">
+      <h2>Kurs-Kalender</h2>
+      <p class="section-sub">Deine Live-Stunden der Woche – wähle deinen Slot.</p>
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Kurs</th>
+            <th>Zeit</th>
+            <th>Level</th>
+            <th>Modus</th>
+            <th>Anmeldung</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Montag</td>
+            <td>Sanfter Einstieg</td>
+            <td>09:00 – 09:30</td>
+            <td>Anfänger</td>
+            <td><span class="mini-badge mini-live">LIVE</span></td>
+            <td><button class="slot" data-kurs="Sanfter Einstieg (Mo 09:00)">Buchen</button></td>
+          </tr>
+          <tr>
+            <td>Dienstag</td>
+            <td>Rumpf &amp; Haltung</td>
+            <td>18:30 – 19:10</td>
+            <td>Anfänger</td>
+            <td><span class="mini-badge mini-ondemand">On-Demand</span></td>
+            <td><button class="slot" data-kurs="Rumpf &amp; Haltung (Di 18:30)">Buchen</button></td>
+          </tr>
+          <tr>
+            <td>Mittwoch</td>
+            <td>Stressabbau</td>
+            <td>12:00 – 12:30</td>
+            <td>Alle Level</td>
+            <td><span class="mini-badge mini-live">LIVE</span></td>
+            <td><button class="slot" data-kurs="Stressabbau (Mi 12:00)">Buchen</button></td>
+          </tr>
+          <tr>
+            <td>Donnerstag</td>
+            <td>Morgengruß</td>
+            <td>07:30 – 08:10</td>
+            <td>Anfänger</td>
+            <td><span class="mini-badge mini-live">LIVE</span></td>
+            <td><button class="slot" data-kurs="Morgengruß (Do 07:30)">Buchen</button></td>
+          </tr>
+          <tr>
+            <td>Freitag</td>
+            <td>Abend-Yoga</td>
+            <td>20:00 – 20:20</td>
+            <td>Alle Level</td>
+            <td><span class="mini-badge mini-ondemand">On-Demand</span></td>
+            <td><button class="slot" data-kurs="Abend-Yoga (Fr 20:00)">Buchen</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== MITGLIEDSCHAFTEN ===== -->
+  <section class="membership" id="preise">
+    <div class="container">
+      <h2>Mitgliedschaften</h2>
+      <p class="section-sub">Wähle das Paket, das zu dir passt.</p>
+      <div class="pricing-grid">
+        <div class="card">
+          <h3>Probetraining</h3>
+          <div class="price">0 €</div>
+          <div class="price-note">kostenlos</div>
+          <ul>
+            <li>1 kostenlose Online-Stunde</li>
+            <li>Geschlossener Frauenkreis</li>
+            <li>Keine Verpflichtung</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-outline">Jetzt sichern</a>
+        </div>
+        <div class="card featured">
+          <span class="popular-badge">Beliebteste Wahl</span>
+          <h3>10er-Karte</h3>
+          <div class="price">120 €</div>
+          <div class="price-note">für 10 Kurse</div>
+          <ul>
+            <li>10 Online-Kurse via Live &amp; Videothek</li>
+            <li>Flexibel einlösbar</li>
+            <li>Für alle Kurs-Level</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-primary">Jetzt buchen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FORMULAR ===== -->
+  <section class="contact" id="kontakt">
+    <div class="container">
+      <h2>Anmeldung &amp; Kontakt</h2>
+      <p class="section-sub" id="form-hint">Melde dich an und sichere dir deinen Platz.</p>
+      <form class="contact-form" action="#" method="post" aria-describedby="form-hint">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Dein Name" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="email">E-Mail-Adresse</label>
+          <input type="email" id="email" name="email" placeholder="deine@email.de" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="paket">Gewünschtes Angebot</label>
+          <select id="paket" name="paket" required>
+            <option value="probe">Kostenloses Probetraining</option>
+            <option value="zehn">10er-Karte (120 €)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="nachricht">Nachricht (optional)</label>
+          <textarea id="nachricht" name="nachricht" placeholder="Deine Fragen oder Wünsche..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit">Jetzt anmelden</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Yoga &amp; Pilates nur für Frauen. Alle Rechte vorbehalten.</p>
+      <p><a href="#">Impressum</a> <a href="#">Datenschutz</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const SITE_VERSION = "1.2";
+    console.log("Aktionsnummer (Version): " + SITE_VERSION);
+
+    document.querySelectorAll('.slot').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const kurs = btn.getAttribute('data-kurs');
+        const select = document.getElementById('paket');
+        select.value = 'zehn';
+        document.getElementById('nachricht').placeholder = 'Ich möchte buchen: ' + kurs;
+        document.getElementById('nachricht').value = 'Buchung für: ' + kurs;
+        document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    const form = document.querySelector('.contact-form');
+    const statusEl = document.querySelector('.form-status');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      statusEl.className = 'form-status is-success';
+      statusEl.textContent = 'Vielen Dank, ' + form.name.value + '! Wir melden uns für dein Angebot.';
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
